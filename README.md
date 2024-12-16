@@ -6,6 +6,10 @@
 
 2010年にミニアルバム「疾鵠」をリリース。その中の一曲である「迷響詩酔」はJOYSOUNDで配信中。
 
+## 作品
+
+- [疾鵠](works/疾鵠)
+
 ## Links
 
 - [Encyclopaedia Metallum - な～にP](https://www.metal-archives.com/bands/%E3%81%AA%EF%BD%9E%E3%81%ABP/3540467081)
