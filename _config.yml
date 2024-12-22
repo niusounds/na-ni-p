@@ -1,3 +1,14 @@
 theme: jekyll-theme-minimal
 title: な～にP
 description: 和鳳（なげは）とniu（にぅ）のユニット「な～にP」
+
+plugins:
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
