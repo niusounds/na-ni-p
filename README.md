@@ -9,6 +9,7 @@
 ## 作品
 
 - [疾鵠](works/疾鵠)
+- [娯疾駆](works/娯疾駆-subscription)
 
 ## Links
 
