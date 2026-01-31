@@ -253,7 +253,7 @@ strong, b {
 }
 
 /* Letter-themed lyrics styling */
-pre {
+section pre {
   /* Bright vintage paper background for readability */
   background: #faf8f3 !important;
   background-image: 
@@ -281,17 +281,17 @@ pre {
   
   /* Handwritten letter text styling */
   color: #1a1a1a !important;
-  font-family: 'Noto Serif JP', serif !important;
-  font-size: 17px !important;
-  line-height: 2.1 !important;
-  padding: 50px 60px !important;
-  margin: 30px auto !important;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 17px;
+  line-height: 2.1;
+  padding: 50px 60px;
+  margin: 30px auto;
   max-width: 700px;
   position: relative;
 }
 
 /* Letter decoration: envelope icon */
-pre::before {
+section pre::before {
   content: '✉';
   position: absolute;
   top: 12px;
@@ -302,7 +302,7 @@ pre::before {
 }
 
 /* Letter decoration: vintage stamp */
-pre::after {
+section pre::after {
   content: '〒';
   position: absolute;
   bottom: 12px;
@@ -318,17 +318,17 @@ pre::after {
 
 /* Inline code (not lyrics) keeps metal aesthetic */
 code:not(pre code) {
-  background: var(--gothic-black);
+  background: var(--gothic-black) !important;
   border: 1px solid var(--deep-crimson);
-  color: var(--silver-mist);
+  color: var(--silver-mist) !important;
   font-family: 'Courier New', monospace;
   padding: 2px 5px;
   border-radius: 3px;
 }
 
-/* Code inside pre inherits pre styling */
-pre code {
-  background: transparent;
+/* Code inside pre inherits pre styling for letter theme */
+section pre code {
+  background: transparent !important;
   border: none;
   color: inherit;
   font-family: inherit;
