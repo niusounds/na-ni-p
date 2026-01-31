@@ -6,8 +6,7 @@
 /* Japanese Gothic-Metal Theme */
 
 /* Import Japanese-friendly fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&family=Cinzel:wght@400;700;900&display=swap');
 
 /* Gothic-Metal color palette with Japanese aesthetics */
 :root {
@@ -19,6 +18,10 @@
   --silver-mist: #C0C0C0;
   --ink-black: #1a1a1a;
   --shadow-gray: #2a2a2a;
+  
+  /* RGB values for alpha transparency */
+  --ink-black-rgb: 26, 26, 26;
+  --midnight-purple-rgb: 26, 0, 51;
 }
 
 body {
@@ -45,7 +48,7 @@ body::before {
 }
 
 .wrapper {
-  background: rgba(26, 26, 26, 0.85);
+  background: rgba(var(--ink-black-rgb), 0.85);
   border: 2px solid var(--deep-crimson);
   border-radius: 0;
   box-shadow: 
@@ -123,7 +126,7 @@ header h1 {
 }
 
 section {
-  background: rgba(26, 0, 51, 0.3);
+  background: rgba(var(--midnight-purple-rgb), 0.3);
   border-left: 3px solid var(--deep-crimson);
   padding: 30px !important;
   position: relative;
@@ -259,7 +262,7 @@ code, pre {
 
 blockquote {
   border-left: 4px solid var(--deep-crimson);
-  background: rgba(26, 0, 51, 0.3);
+  background: rgba(var(--midnight-purple-rgb), 0.3);
   color: var(--silver-mist);
   padding: 15px 20px;
   margin: 20px 0;
