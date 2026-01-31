@@ -290,31 +290,7 @@ section pre {
   position: relative;
 }
 
-/* Letter decoration: envelope icon */
-section pre::before {
-  content: '✉';
-  position: absolute;
-  top: 12px;
-  right: 18px;
-  font-size: 28px;
-  color: #8B0000;
-  opacity: 0.25;
-}
 
-/* Letter decoration: vintage stamp */
-section pre::after {
-  content: '〒';
-  position: absolute;
-  bottom: 12px;
-  right: 18px;
-  font-size: 22px;
-  color: #8B0000;
-  opacity: 0.35;
-  border: 2px dashed rgba(139, 0, 0, 0.25);
-  padding: 4px 8px;
-  border-radius: 2px;
-  background: rgba(212, 175, 55, 0.05);
-}
 
 /* Inline code (not lyrics) keeps metal aesthetic */
 code:not(pre code) {
