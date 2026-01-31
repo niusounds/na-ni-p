@@ -1,0 +1,309 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Japanese Gothic-Metal Theme */
+
+/* Import Japanese-friendly fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+
+/* Gothic-Metal color palette with Japanese aesthetics */
+:root {
+  --gothic-black: #0a0a0a;
+  --deep-crimson: #8B0000;
+  --blood-red: #DC143C;
+  --midnight-purple: #1a0033;
+  --gold-leaf: #D4AF37;
+  --silver-mist: #C0C0C0;
+  --ink-black: #1a1a1a;
+  --shadow-gray: #2a2a2a;
+}
+
+body {
+  background: linear-gradient(135deg, var(--gothic-black) 0%, var(--midnight-purple) 50%, var(--gothic-black) 100%);
+  background-attachment: fixed;
+  color: var(--silver-mist);
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
+}
+
+/* Japanese traditional pattern overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(212, 175, 55, 0.02) 20px, rgba(212, 175, 55, 0.02) 40px),
+    repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(139, 0, 0, 0.02) 20px, rgba(139, 0, 0, 0.02) 40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wrapper {
+  background: rgba(26, 26, 26, 0.85);
+  border: 2px solid var(--deep-crimson);
+  border-radius: 0;
+  box-shadow: 
+    0 0 30px rgba(139, 0, 0, 0.5),
+    inset 0 0 50px rgba(0, 0, 0, 0.5),
+    0 0 100px rgba(26, 0, 51, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  background: linear-gradient(180deg, var(--ink-black) 0%, var(--shadow-gray) 100%);
+  border-bottom: 3px solid var(--deep-crimson);
+  border-top: 1px solid var(--gold-leaf);
+  padding: 30px 20px !important;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(139, 0, 0, 0.3);
+}
+
+header::before {
+  content: '卍';
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: var(--deep-crimson);
+  opacity: 0.3;
+  font-family: 'Noto Serif JP', serif;
+}
+
+header::after {
+  content: '卍';
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 30px;
+  color: var(--deep-crimson);
+  opacity: 0.3;
+  font-family: 'Noto Serif JP', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', 'Noto Serif JP', serif !important;
+  color: var(--gold-leaf) !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(212, 175, 55, 0.5),
+    0 0 20px rgba(139, 0, 0, 0.3);
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  border-bottom: 2px solid var(--deep-crimson);
+  padding-bottom: 10px;
+  margin-top: 30px;
+  position: relative;
+}
+
+h1 a, h2 a, h3 a {
+  color: var(--gold-leaf) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: var(--blood-red) !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 15px rgba(220, 20, 60, 0.8);
+}
+
+header h1 {
+  font-size: 42px;
+  border-bottom: none;
+  margin: 0;
+}
+
+section {
+  background: rgba(26, 0, 51, 0.3);
+  border-left: 3px solid var(--deep-crimson);
+  padding: 30px !important;
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(139, 0, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(26, 0, 51, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+p {
+  color: var(--silver-mist);
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: var(--blood-red);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+a:hover {
+  color: var(--gold-leaf);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold-leaf);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+ul, ol {
+  color: var(--silver-mist);
+}
+
+li {
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+img {
+  border: 3px solid var(--deep-crimson);
+  border-radius: 0;
+  box-shadow: 
+    0 0 20px rgba(139, 0, 0, 0.5),
+    0 0 40px rgba(26, 0, 51, 0.3);
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  border-color: var(--gold-leaf);
+  box-shadow: 
+    0 0 30px rgba(212, 175, 55, 0.6),
+    0 0 50px rgba(139, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+
+footer {
+  background: var(--ink-black);
+  border-top: 3px solid var(--deep-crimson);
+  border-bottom: 1px solid var(--gold-leaf);
+  color: var(--silver-mist);
+  padding: 20px !important;
+  text-align: center;
+  box-shadow: 0 -4px 20px rgba(139, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+footer a {
+  color: var(--blood-red);
+}
+
+footer a:hover {
+  color: var(--gold-leaf);
+}
+
+/* Japanese decorative elements */
+h1::before, h2::before {
+  content: '◆';
+  color: var(--deep-crimson);
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+h1::after, h2::after {
+  content: '◆';
+  color: var(--deep-crimson);
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+/* Strong Gothic Metal atmosphere */
+strong, b {
+  color: var(--gold-leaf);
+  font-weight: 900;
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+}
+
+/* Code blocks with metal aesthetic */
+code, pre {
+  background: var(--gothic-black);
+  border: 1px solid var(--deep-crimson);
+  color: var(--silver-mist);
+  font-family: 'Courier New', monospace;
+}
+
+blockquote {
+  border-left: 4px solid var(--deep-crimson);
+  background: rgba(26, 0, 51, 0.3);
+  color: var(--silver-mist);
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar styling for Gothic aesthetic */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gothic-black);
+  border-left: 1px solid var(--deep-crimson);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--deep-crimson) 0%, var(--blood-red) 100%);
+  border: 1px solid var(--gold-leaf);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--blood-red) 0%, var(--gold-leaf) 100%);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--deep-crimson);
+  color: var(--gold-leaf);
+}
+
+::-moz-selection {
+  background: var(--deep-crimson);
+  color: var(--gold-leaf);
+}
+
+/* Responsive adjustments */
+@media print, screen and (max-width: 960px) {
+  body {
+    padding: 15px;
+  }
+  
+  .wrapper {
+    border-width: 1px;
+  }
+}
